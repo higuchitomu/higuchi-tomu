@@ -10,15 +10,17 @@
       
     </head>
     <body class="antialiased">
-        <h1>Blog Name</h1>
-        <div Class= 'posts'>
-            @foreach($posts as $post)
-            <div class='post'>
-                <a href="/posts/{{ $post->id}}"><h2 class='title'>{{ $post->title }}</h2></a>
+        <h1>classs='title'
+        {{ $post->title}}
+        </h1>
+        <div Class= 'content'>
+            <div class='content_post'>
+                <h3>本文</h3>
                 <p class='body'>{{ $post->body }}</p>
             </div>
-            @endforeach
         </div>
-        <div class='paginate'>{{ $posts->links()}}</div>
-    </body>
+        <div class='footer'>
+            <a herf="/">戻る</a>
+        </div>
+    </body>    
 </html>
