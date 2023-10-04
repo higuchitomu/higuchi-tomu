@@ -10,7 +10,7 @@
       
     </head>
     <body class="antialiased">
-        <h1>classs='title'
+        <h1 class='title'>
         {{ $post->title}}
         </h1>
         <div Class= 'content'>
